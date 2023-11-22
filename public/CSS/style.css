@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+}
+.weather-msg{
+            margin: 3rem 0 4rem 0;
+            text-transform: capitalize;
+            font-size: 3rem;
+}
+
+body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+}
+
+.aboutme{
+            color: #6C63FF;
+}
+
+
+.weather-btn{
+            border: none;
+            padding: 0.8rem 1.8rem;
+            font-size: 1.4rem;
+            border-radius: 2rem;
+            outline: none;
+            background-color:#6C63FF;
+            color: white;
+}
+a{
+            color: aliceblue;
+}
+a:hover{
+            color: #6C63FF;
+}
+.navbar-toggler-icon{
+            background-color: grey;
+}
+    .carousel-item {
+        transition-duration: 1s; 
+    }
+
+.nav-link{
+            margin :0 1rem;
+}
+.row{
+            margin: 0;
+            padding: 0;
+}
+.Footer{
+            margin-top: auto;
+           line-height: 2rem;
+}
+        
+figure{
+            filter: drop-shadow(0 0.5rem 1rem rgba(0,0,0,0.3));
+}
+
+.tempInfo{
+            max-width: 35rem;
+            margin: auto;
+            min-width: 10rem; 
+            background-color: #323544;
+            border-radius: 1rem;  
+            color: white;
+}
+.dateInfo{
+            width: 100%;
+            height: 20%;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 1rem;
+            justify-content: space-between;
+}
+.date_css{
+            color: white;
+            /* font-weight: 700; */
+            font-size: 1.5rem;
+            padding: 1rem;
+}
+
+#city_name{
+            padding: 2rem 2rem;
+            color: #bfc1c8;
+            font-weight: 300;
+            font-size: 1.5rem;
+            text-align: left;
+}
+.weather{
+            text-align: left;
+            padding: 0 2rem;
+            color: #fff;
+}
+.weathe_css{
+            font-size: 5rem;
+            font-weight: 500;
+}
+sup{
+            font-size: 3rem;
+            margin-top: -1rem;
+}
+.temp_form{
+            width: 60%;
+            position: relative;
+            margin: 5rem auto 3rem;
+}
+.search_box{
+            width: 100%;
+            padding: 1rem 5rem 1rem 2rem;
+            background: #1e202b;
+            color: white;
+            outline: none;
+            border: none;
+            font-size: 1.7rem; ;
+            border-radius: 3rem;
+}
+::placeholder{
+            color: #bfc1c8;
+}
+.temp_form input[type="submit"]{
+            position:absolute;
+            top: 5px;
+            bottom: 5px;
+            right: 5px;
+            border: none;
+            background: #009ad8;
+            padding: 0 3rem;
+            border-radius: 3rem;
+            font-size: 1.3rem;
+            color: white;
+}
+.data_hide{
+            visibility: hidden;
+            transition: all 0.3s linear;
+}
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .temp_form {
+                width: 80%; /* Adjust the width as needed */
+                margin: 3rem auto;
+            }
+            .search_box {
+                padding: 1rem 2rem;
+            }
+            .weathe_css {
+                font-size: 4rem;
+            }
+            sup {
+                font-size: 2.5rem;
+            }
+            .temp_form{
+                        width: auto;
+            }
+            .date_css {
+                        font-size: 1.5rem;
+                    }
+                    .dateInfo {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .temp_form {
+                width: 70%; /* Adjust the width as needed */
+                margin: 4rem auto;
+            }
+            .search_box {
+                padding: 1rem 3rem;
+            }
+            .weathe_css {
+                font-size: 4.5rem;
+            }
+            sup {
+                font-size: 3rem;
+            }
+            .temp_form{
+                        width: auto;
+            }
+            .date_css {
+                        font-size: 1.5rem;
+                    }
+            .dateInfo {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+        }
+@media (max-width: 575.98px) {
+            .temp_form {
+                width: auto;
+                /* margin: 2rem auto; */
+            }
+             .search_box {
+                /* padding: 1rem 2rem; */
+                 width: 100%; 
+            } 
+            .search_button {
+                /* Remove absolute positioning and adjust styles */
+                border: none;
+                background: #009ad8;
+                padding: 0 3rem;
+                border-radius: 1rem;
+                font-size: 1.2rem;
+                color: white;
+                width: fit-content;
+                width: auto;
+                /* margin-top: 1rem; Add margin for separation */ 
+            }
+            .dateInfo {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .date_css {
+                font-size: 1.5rem;
+            }
+            .weathe_css {
+                font-size: 3rem;
+            }
+            sup {
+                font-size: 2rem;
+                margin-top: -1rem; /* Adjust the margin as needed */
+            }
+        }
