@@ -1,8 +1,14 @@
+const dotenv = require('dotenv');
+const result = dotenv.config();
+
+if (result.error) {
+  throw result.error;
+}
 const express = require('express');
 const path = require('path');
 const hbs = require('hbs');
 const app = express();
-const port = process.env.port || 5000;
+const PORT = process.env.PORT;
 
 const staticPath = path.join(__dirname, '../public');
 const template_path = path.join(__dirname, '../templates/views');
@@ -32,6 +38,6 @@ app.get("/*/*", (req, res) => {
   res.render('404error');
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening at http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is listening at http://localhost:${PORT}`);
 });
